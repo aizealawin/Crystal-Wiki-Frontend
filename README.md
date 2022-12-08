@@ -35,11 +35,11 @@ This app, the Crystal Wiki, is designed to be the perfect malleable tool for any
 
 #### **_Component Hierarchy Diagram:_**
 
-![Component Hierarchy Diagram](tbd 'Component Hierarchy Diagram')
+![Component Hierarchy Diagram](./public/Crystal%20CHD.png 'Component Hierarchy Diagram')
 
 ### **_Planning_**
 
-#### [Crystal Wiki Trello Board](https://trello.com/b/Q1r3U2MG/gp3-foodie-review)
+#### [Crystal Wiki Trello Board](https://trello.com/b/YmmK91N3/crystal-pern-stack)
 
 ### **_License_**
 
