@@ -3,7 +3,7 @@ import Nav from './Components/Nav'
 import Home from './Pages/Home'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
-import Articles from './Components/Articles'
+import Articles from './Pages/Articles'
 
 import './Styles/App.css'
 
@@ -17,7 +17,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/articles" element={<Articles />} />
+        <Route path="/articles/world" element={<Articles />} />
+        <Route path="/articles/deities" element={<Articles />} />
+        <Route path="/articles/map" element={<Articles />} />
       </Routes>
     </div>
   )
