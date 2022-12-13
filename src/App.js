@@ -4,6 +4,7 @@ import Home from './Pages/Home'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
 import Articles from './Pages/Articles'
+import DeityArticle from './Pages/DeityArticle'
 
 import './Styles/App.css'
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/articles/world" element={<Articles />} />
         <Route path="/articles/deities" element={<Articles />} />
+        <Route path="/articles/deities/:deityId" element={<DeityArticle />} />
         <Route path="/articles/map" element={<Articles />} />
       </Routes>
     </div>

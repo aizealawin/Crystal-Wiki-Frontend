@@ -4,7 +4,7 @@ import Client from '../Services/api'
 import { useState, useEffect } from 'react'
 import { useParams, Link, useHref } from 'react-router-dom'
 import WorldArticles from '../Components/WorldArticles'
-import DeityArticles from '../Components/DeityArticles'
+import DeityArticles from '../Components/DeityMap'
 import MapArticles from '../Components/MapArticles'
 
 const Articles = () => {
@@ -25,11 +25,6 @@ const Articles = () => {
 
   return (
     <div>
-      {/* {articles.map((response) => {
-        if (lastDirectory === 'world') {
-          return <WorldArticles />
-        }
-      })} */}
       {lastDirectory === 'world' ? <WorldArticles /> : null}
       {lastDirectory === 'deities' ? <DeityArticles /> : null}
       {lastDirectory === 'map' ? <MapArticles /> : null}

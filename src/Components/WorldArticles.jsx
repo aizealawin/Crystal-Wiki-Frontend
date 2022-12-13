@@ -22,7 +22,10 @@ const WorldArticles = () => {
           if (response.type === "lore"){
           return (
             <div key={response.id}>
-              <p>{response.content}</p>
+              <img src={response.image} alt={response.image}/>
+              <p>
+                {response.content}
+              </p>
             </div> 
           )}
         })

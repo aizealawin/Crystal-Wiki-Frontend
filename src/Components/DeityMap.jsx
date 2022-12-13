@@ -2,8 +2,9 @@ import React from 'react'
 import Client from '../Services/api'
 import { useState, useEffect } from 'react'
 import { useParams, Link, useHref } from 'react-router-dom'
+import DeityCard from './DeityCard'
 
-const DeityArticles = () => {
+const DeityMap = () => {
 
   const [articles, setArticles] = useState([])
 
@@ -22,7 +23,11 @@ const DeityArticles = () => {
           if (response.type === "god"){
           return (
             <div key={response.id}>
-              <p>{response.content}</p>
+              <Link to={{
+                pathname:`/articles/deities/${response.id}`
+              }}>
+                <DeityCard title={response.title} content={response.content} image={response.image}/>
+              </Link>
             </div> 
           )}
         })
@@ -31,4 +36,4 @@ const DeityArticles = () => {
   )
 }
 
-export default DeityArticles
+export default DeityMap
