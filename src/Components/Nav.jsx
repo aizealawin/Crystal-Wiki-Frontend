@@ -5,8 +5,10 @@ const Nav = () => {
   return (
     <nav>
       <Link to='/'>Home</Link>
+      <Link to='/articles/'>World Info</Link>
+      <Link to='/articles'>Deities</Link>
+      <Link to='/articles'>Map</Link>
       <Link to='/login'>Login</Link>
-      <Link to='/articles'>Articles</Link>
     </nav>
   )
 }
