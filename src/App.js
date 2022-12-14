@@ -5,7 +5,6 @@ import Login from './Pages/Login'
 import Register from './Pages/Register'
 import Articles from './Pages/Articles'
 import DeityArticle from './Pages/Articles/DeityArticle'
-
 import './Styles/App.css'
 import MapArticle from './Pages/Articles/MapArticle'
 import WorldArticle from './Pages/Articles/WorldArticle'
@@ -15,9 +14,7 @@ import NewArticle from './Pages/Articles/NewArticle'
 function App() {
   return (
     <div className="App">
-      <header className="App-Header">
-        <Nav />
-      </header>
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -31,6 +28,7 @@ function App() {
         <Route path="/edit/:articleId" element={<EditArticle />} />
         <Route path="/new/:articleType" element={<NewArticle />} />
       </Routes>
+      <footer></footer>
     </div>
   )
 }
