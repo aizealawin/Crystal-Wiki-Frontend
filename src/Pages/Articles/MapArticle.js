@@ -8,7 +8,6 @@ const MapArticle = () => {
   const [map, setMap] = useState([])
 
   const { mapId } = useParams()
-  const type = 3
   useEffect(() => {
     const getMap = async () => {
       let response = await Client.get(`/articles/${mapId}`)
@@ -23,9 +22,6 @@ const MapArticle = () => {
         <button>Edit Article</button>
       </Link>
       <br />
-      <Link to={`/new/${type}`}>
-        <button>New Article</button>
-      </Link>
       <h2>{map.title}</h2>
       <div>
         <img src={map.image} />

@@ -8,7 +8,6 @@ const DeityArticle = () => {
   const [deity, setDeity] = useState([])
 
   const { deityId } = useParams()
-  const type = 1
   useEffect(() => {
     const getDeity = async () => {
       let response = await Client.get(`/articles/${deityId}`)
@@ -23,9 +22,6 @@ const DeityArticle = () => {
         <button>Edit Article</button>
       </Link>
       <br />
-      <Link to={`/new/${type}`}>
-        <button>New Article</button>
-      </Link>
       <h2>{deity.title}</h2>
       <div>
         <img src={deity.image} alt="broken pic" />

@@ -7,12 +7,12 @@ const NewArticle = () => {
   const { articleType } = useParams()
   console.log(articleType)
   let type = ''
-  if (articleType === 1) {
+  if (articleType === '1') {
     type = 'god'
-  } else if (articleType === 2) {
-    type = 'map'
-  } else {
+  } else if (articleType === '2') {
     type = 'lore'
+  } else if (articleType === '3') {
+    type = 'map'
   }
   console.log(type)
   const initialEditState = {

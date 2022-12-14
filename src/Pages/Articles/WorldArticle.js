@@ -6,7 +6,6 @@ import CommentMap from '../../Components/Maps/CommentMap'
 
 const WorldArticle = () => {
   const [lore, setLore] = useState([])
-  const type = 2
   const { loreId } = useParams()
 
   useEffect(() => {
@@ -23,9 +22,6 @@ const WorldArticle = () => {
         <button>Edit Article</button>
       </Link>
       <br />
-      <Link to={`/new/${type}`}>
-        <button>New Article</button>
-      </Link>
       <h2>{lore.title}</h2>
       <div>
         <img src={lore.image} />
