@@ -1,9 +1,10 @@
 import React from 'react'
-import Client from '../Services/api'
+import Client from '../../Services/api'
 import { useState, useEffect } from 'react'
 import { useParams, Link, useHref } from 'react-router-dom'
+import WorldCard from '../WorldCard'
 
-const WorldArticles = () => {
+const WorldMap = () => {
 
   const [articles, setArticles] = useState([])
 
@@ -22,10 +23,11 @@ const WorldArticles = () => {
           if (response.type === "lore"){
           return (
             <div key={response.id}>
-              <img src={response.image} alt={response.image}/>
-              <p>
-                {response.content}
-              </p>
+              <Link to={{
+                pathname:`/articles/lore/${response.id}`
+              }}>
+                <WorldCard title={response.title} content={response.content} image={response.image}/>
+              </Link>
             </div> 
           )}
         })
@@ -34,4 +36,4 @@ const WorldArticles = () => {
   )
 }
 
-export default WorldArticles
+export default WorldMap

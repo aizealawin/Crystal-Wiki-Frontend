@@ -4,9 +4,11 @@ import Home from './Pages/Home'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
 import Articles from './Pages/Articles'
-import DeityArticle from './Pages/DeityArticle'
+import DeityArticle from './Pages/Articles/DeityArticle'
 
 import './Styles/App.css'
+import MapArticle from './Pages/Articles/MapArticle'
+import WorldArticle from './Pages/Articles/WorldArticle'
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/articles/world" element={<Articles />} />
         <Route path="/articles/deities" element={<Articles />} />
         <Route path="/articles/deities/:deityId" element={<DeityArticle />} />
+        <Route path="/articles/map/:mapId" element={<MapArticle />} />
+        <Route path="/articles/lore/:loreId" element={<WorldArticle />} />
         <Route path="/articles/map" element={<Articles />} />
       </Routes>
     </div>

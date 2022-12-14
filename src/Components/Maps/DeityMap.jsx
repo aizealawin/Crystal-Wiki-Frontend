@@ -1,8 +1,8 @@
 import React from 'react'
-import Client from '../Services/api'
+import Client from '../../Services/api'
 import { useState, useEffect } from 'react'
 import { useParams, Link, useHref } from 'react-router-dom'
-import DeityCard from './DeityCard'
+import DeityCard from '../DeityCard'
 
 const DeityMap = () => {
 

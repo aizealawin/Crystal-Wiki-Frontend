@@ -3,9 +3,9 @@ import axios from 'axios'
 import Client from '../Services/api'
 import { useState, useEffect } from 'react'
 import { useParams, Link, useHref } from 'react-router-dom'
-import WorldArticles from '../Components/WorldArticles'
-import DeityArticles from '../Components/DeityMap'
-import MapArticles from '../Components/MapArticles'
+import WorldMap from '../Components/Maps/WorldMap'
+import DeityArticles from '../Components/Maps/DeityMap'
+import MapArticles from '../Components/Maps/MapArticles'
 
 const Articles = () => {
   const path = useHref()
@@ -25,7 +25,7 @@ const Articles = () => {
 
   return (
     <div>
-      {lastDirectory === 'world' ? <WorldArticles /> : null}
+      {lastDirectory === 'world' ? <WorldMap /> : null}
       {lastDirectory === 'deities' ? <DeityArticles /> : null}
       {lastDirectory === 'map' ? <MapArticles /> : null}
     </div>

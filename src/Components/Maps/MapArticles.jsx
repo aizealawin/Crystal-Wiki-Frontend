@@ -1,7 +1,8 @@
 import React from 'react'
-import Client from '../Services/api'
+import Client from '../../Services/api'
 import { useState, useEffect } from 'react'
 import { useParams, Link, useHref } from 'react-router-dom'
+import MapCard from '../MapCard'
 
 const MapArticles = () => {
 
@@ -22,7 +23,11 @@ const MapArticles = () => {
           if (response.type === "map"){
           return (
             <div key={response.id}>
-              <p>{response.content}</p>
+              <Link to={{
+                pathname:`/articles/map/${response.id}`
+              }}>
+                <MapCard title={response.title} content={response.content} image={response.image}/>
+              </Link>
             </div> 
           )}
         })
