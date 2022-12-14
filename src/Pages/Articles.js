@@ -1,8 +1,7 @@
 import React from 'react'
-import axios from 'axios'
 import Client from '../Services/api'
 import { useState, useEffect } from 'react'
-import { useParams, Link, useHref } from 'react-router-dom'
+import { useHref, Link } from 'react-router-dom'
 import WorldMap from '../Components/Maps/WorldMap'
 import DeityArticles from '../Components/Maps/DeityMap'
 import MapArticles from '../Components/Maps/MapArticles'
@@ -11,7 +10,7 @@ const Articles = () => {
   const path = useHref()
   const directories = path.split('/')
   const lastDirectory = directories[directories.length - 1]
-  console.log(lastDirectory)
+  let type
 
   const [articles, setArticles] = useState([])
 
@@ -25,8 +24,23 @@ const Articles = () => {
 
   return (
     <div>
+      {lastDirectory === 'world' ? (
+        <Link to={`/new/${(type = 2)}`}>
+          <button>New Article</button>
+        </Link>
+      ) : null}
       {lastDirectory === 'world' ? <WorldMap /> : null}
+      {lastDirectory === 'deities' ? (
+        <Link to={`/new/${(type = 1)}`}>
+          <button>New Article</button>
+        </Link>
+      ) : null}
       {lastDirectory === 'deities' ? <DeityArticles /> : null}
+      {lastDirectory === 'map' ? (
+        <Link to={`/new/${(type = 3)}`}>
+          <button>New Article</button>
+        </Link>
+      ) : null}
       {lastDirectory === 'map' ? <MapArticles /> : null}
     </div>
   )

@@ -4,7 +4,7 @@ const DeityCard = ({title, image}) => {
   return (
     <div className='DeityDetails'>
       <p>{title}</p>
-      <img src={image} alt='broken image'/>
+      <img src={image} alt='broken pic'/>
     </div>
   )
 }

@@ -1,12 +1,12 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import ReactMarkdown from 'react-markdown'
 import Client from '../../Services/api'
+import CommentMap from '../../Components/Maps/CommentMap'
 
 const WorldArticle = () => {
   const [lore, setLore] = useState([])
-
+  const type = 2
   const { loreId } = useParams()
 
   useEffect(() => {
@@ -19,20 +19,20 @@ const WorldArticle = () => {
 
   return (
     <div>
+      <Link to={`/edit/${loreId}`}>
+        <button>Edit Article</button>
+      </Link>
+      <br />
+      <Link to={`/new/${type}`}>
+        <button>New Article</button>
+      </Link>
       <h2>{lore.title}</h2>
       <div>
         <img src={lore.image} />
-        <p>{lore.alignment}</p>
         <p>{lore.category}</p>
-        <p>{lore.domains}</p>
-        <p>{lore.pantheon}</p>
-        <p>{lore.symbol}</p>
-        <img src={lore.symbolImage} />
       </div>
       <p>{lore.content}</p>
-      <p>{lore.depiction}</p>
-      <p>{lore.enemies}</p>
-      <p>{lore.commandments}</p>
+      <CommentMap articleId={loreId} />
     </div>
   )
 }
