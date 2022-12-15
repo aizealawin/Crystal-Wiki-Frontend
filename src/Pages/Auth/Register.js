@@ -33,10 +33,11 @@ const Register = () => {
   }
 
   return (
-    <div>
-      <div>
-        <form onSubmit={handleSubmit}>
-          <div>
+    <div className="register">
+      <div className="register-card-overlay">
+        <h2> Register Now</h2>
+        <form className="col" onSubmit={handleSubmit}>
+          <div className="registerinput-wrap">
             <label htmlFor="name">Name</label>
             <input
               onChange={handleChange}
@@ -47,7 +48,7 @@ const Register = () => {
               required
             />
           </div>
-          <div>
+          <div className="registerinput-wrap">
             <label htmlFor="email">Email</label>
             <input
               onChange={handleChange}
@@ -58,7 +59,7 @@ const Register = () => {
               required
             />
           </div>
-          <div>
+          <div className="registerinput-wrap">
             <label htmlFor="password">Password</label>
             <input
               onChange={handleChange}
@@ -68,7 +69,7 @@ const Register = () => {
               required
             />
           </div>
-          <div>
+          <div className="registerinput-wrap">
             <label htmlFor="confirmPassword">Confirm Password</label>
             <input
               onChange={handleChange}
