@@ -18,7 +18,8 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 0;
-  width: 100vw;
+  min-width: 80vw;
+  
 }
 
 .nav-links > a{
@@ -37,6 +38,63 @@ nav {
   margin-top: -10px;
   color: white;
   text-decoration: none;
+}
+
+/* Main Components - consistent on all pages*/
+
+p{
+  font-family:'Gothic A1';
+  font-size:16px;
+}
+button{
+  font-family: 'Gothic A1';
+  font-size: 20px;
+}
+
+.night-button{
+  border-radius: 20px;
+  border-style: none;
+  background-color: rgba(45, 32, 96, 1);
+  width: 10vw;
+  height: 4vh;
+  color: white;
+}
+
+.grapebutton{
+  border-radius: 20px;
+  padding: 5px;
+  border-style: none;
+  background-color: rgba(121, 28, 138, 1);
+  width: 10em;
+  height: 2em;
+  color: white;
+  margin: 10px 0 10px 0;
+}
+
+footer{
+  background-color: rgba(22, 33, 62, 1);
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  max-width: 80vw;
+  height: 10em;
+  margin: auto;
+  justify-content: space-between;
+  color: white;
+}
+
+.footer-part{
+  display:flex;
+  max-width: 10em;
+  margin: auto;
+  align-items: center;
+}
+
+.icon-image{
+  height: 20px;
+  margin-right: 10px;
 }
 
 /* HOME PAGE */
@@ -71,8 +129,6 @@ nav {
   border-color: black;
 }
 
-
-
 .home-body > p, h4 {
   color: white;
   font-family: 'Didact Gothic';
@@ -86,24 +142,20 @@ nav {
   margin: auto;
 }
 
-.join-button{
-  border-radius: 20px;
-  border-style: none;
-  background-color: rgba(45, 32, 96, 1);
-  width: 10vw;
-  height: 4vh;
-  color: white;
-}
+/* Homepage- About us */
 
 .about-us-container {
   max-width: 80vw;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 20px auto;
+
 }
 .about-us-container > h3 {
   font-family: 'Cinzel';
   font-size: 48px;
   text-align: left;
-  margin-bottom: 0;
+  margin: 5px 0 5px 0;
 }
 .about-us-container > p{
   text-align: left;
@@ -114,12 +166,9 @@ nav {
   width: 100%;
 }
 
-.history{
-  border-radius: 20px;
-  border-style: none;
-  background-color: rgba(45, 32, 96, 1);
-  width: 10vw;
-  height: 4vh;
-  color: white;
-  align-items: left;
+
+
+
+@media screen and (min-width: 480px){
+
 }
