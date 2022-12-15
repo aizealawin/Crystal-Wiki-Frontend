@@ -6,6 +6,7 @@ export const SignInUser = async (data) => {
     localStorage.setItem('token', res.data.token)
     return res.data.user
   } catch (error) {
+    alert('Invalid Username or Password')
     throw error
   }
 }

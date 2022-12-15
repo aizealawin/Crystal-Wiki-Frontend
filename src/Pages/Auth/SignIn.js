@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { SignInUser } from '../../Services/Auth'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useHref } from 'react-router-dom'
 
 const SignIn = ({ setUser, toggleAuthenticated }) => {
   const navigate = useNavigate()
@@ -16,7 +16,7 @@ const SignIn = ({ setUser, toggleAuthenticated }) => {
     setFormValues({ email: '', password: '' })
     setUser(payload)
     toggleAuthenticated(true)
-    navigate('/feed')
+    navigate('/')
   }
 
   return (
