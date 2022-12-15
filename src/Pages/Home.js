@@ -28,7 +28,7 @@ const Home = () => {
       </div>
       <div className="about-us">
         <div className="about-us-container">
-          <h3>About us</h3>
+          <h2>About us</h2>
           <img className="starline" src="https://i.imgur.com/Ab5dZYz.png" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -49,7 +49,7 @@ const Home = () => {
               className="icon-image"
               src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png"
             />
-            <p> Kagrea</p>
+            <p> Kagrea Discord</p>
           </div>
           <div className="footer-part">
             <p> Designed By Kusal Tholka Mudalige</p>

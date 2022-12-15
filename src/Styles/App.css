@@ -42,6 +42,15 @@ nav {
 
 /* Main Components - consistent on all pages*/
 
+h2{
+  font-family: 'Cinzel'
+}
+
+h4{
+  font-family: 'Gothic A1';
+  font-size: 22px;
+}
+
 p{
   font-family:'Gothic A1';
   font-size:16px;
@@ -74,6 +83,7 @@ button{
 footer{
   background-color: rgba(22, 33, 62, 1);
   margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 .footer-container {
@@ -155,7 +165,7 @@ footer{
   margin: 20px auto 20px auto;
 
 }
-.about-us-container > h3 {
+.about-us-container > h2 {
   font-family: 'Cinzel';
   font-size: 48px;
   text-align: left;
@@ -171,8 +181,15 @@ footer{
 }
 
 
+/* DEITY PAGE */
 
+/* DEITY CARD */
 
-@media screen and (min-width: 480px){
-
+.DeityDetails > img {
+ height: 200px;
 }
+
+.DeityDetails > a {
+ text-decoration: none;
+}
+
