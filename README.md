@@ -30,8 +30,8 @@ This app, the Crystal Wiki, is designed to be the perfect malleable tool for any
 
 - PostgreSQL + Sequelize
 - Express.js
+- React.js
 - Node.js
-- JavaScript
 
 #### **_Component Hierarchy Diagram:_**
 
@@ -40,6 +40,16 @@ This app, the Crystal Wiki, is designed to be the perfect malleable tool for any
 ### **_Planning_**
 
 #### [Crystal Wiki Trello Board](https://trello.com/b/YmmK91N3/crystal-pern-stack)
+
+#### **_Figma Planning Images_**
+
+### **_Wireframe_**
+
+![Figma Wireframe](./public//FigmaWireFrame.png 'Wireframe')
+
+### **_Design Board_**
+
+![Figma Design](./public/FigmaDesign.png 'Design')
 
 ### **_License_**
 
