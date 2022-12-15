@@ -10,7 +10,7 @@ import WorldArticle from './Pages/Articles/WorldArticle'
 import EditArticle from './Pages/Articles/EditArticle'
 import NewArticle from './Pages/Articles/NewArticle'
 // Auth Imports
-import Register from './Pages/Register'
+import Register from './Pages/Auth/Register'
 import SignIn from './Pages/Auth/SignIn'
 import { CheckSession } from './Services/Auth'
 

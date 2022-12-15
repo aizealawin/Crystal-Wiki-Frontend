@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { RegisterUser } from '../services/Auth'
+import { RegisterUser } from '../../Services/Auth'
 import { useNavigate, Link } from 'react-router-dom'
+
 const Register = () => {
   let navigate = useNavigate()
 
@@ -41,7 +42,7 @@ const Register = () => {
               onChange={handleChange}
               name="name"
               type="text"
-              placeholder="Name"
+              placeholder="name"
               value={formValues.name}
               required
             />
@@ -57,7 +58,6 @@ const Register = () => {
               required
             />
           </div>
-
           <div>
             <label htmlFor="password">Password</label>
             <input
@@ -87,9 +87,10 @@ const Register = () => {
           >
             Sign In
           </button>
+          <br />
+          <Link to="/signin">Have an account?</Link>
         </form>
       </div>
-      <Link to="/signin">Have an account?</Link>
     </div>
   )
 }
