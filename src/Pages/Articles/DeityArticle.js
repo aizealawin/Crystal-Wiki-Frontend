@@ -3,9 +3,11 @@ import { Link, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Client from '../../Services/api'
 import CommentMap from '../../Components/Maps/CommentMap'
+import { useNavigate } from 'react-router-dom'
 
 const DeityArticle = () => {
   const [deity, setDeity] = useState([])
+  const navigate = useNavigate()
 
   const { deityId } = useParams()
   useEffect(() => {
@@ -15,12 +17,20 @@ const DeityArticle = () => {
     }
     getDeity()
   }, [deityId])
-  console.log(deity)
+
+  const handleDelete = async (id) => {
+    await Client.delete(`/articles/${deityId}`)
+    navigate('/')
+  }
+
   return (
     <div>
       <Link to={`/edit/${deityId}`}>
         <button>Edit Article</button>
       </Link>
+      <button onClick={handleDelete}>Delete Article</button>
+      <br />
+
       <div className="deityarticle-container">
         <div className="deity-words">
           <h3>{deity.title}</h3>

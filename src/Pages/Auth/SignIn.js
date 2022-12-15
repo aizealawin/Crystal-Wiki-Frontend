@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { SignInUser } from '../../Services/Auth'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const SignIn = ({ setUser, toggleAuthenticated }) => {
   const navigate = useNavigate()
@@ -47,6 +47,8 @@ const SignIn = ({ setUser, toggleAuthenticated }) => {
           <button disabled={!formValues.email || !formValues.password}>
             Sign In
           </button>
+          <br />
+          <Link to="/register">Need to register?</Link>
         </form>
       </div>
     </div>

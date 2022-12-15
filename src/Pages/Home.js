@@ -1,6 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  const navigate = useNavigate()
+
+  const handleRegister = () => {
+    navigate('/register')
+  }
+
+  const handleArticleNav = () => {
+    navigate('/articles/world')
+  }
+
   return (
     <div className="home">
       <div className="intro-holder">
@@ -10,12 +21,18 @@ const Home = () => {
             <div className="kagrea-name">Kagrea</div>
             <h4>A World of Magic - Crystal: 1</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              A world crafted to house most fantasies as different countries and
+              even continents. The lore and world of Kagrea is vast, in depth
+              and ever growing. With countries such as Ur the fabric of this
+              world is forever changing and our players will actively mold this
+              land that is ruled by a demi-god. With political factions,
+              powerful beasts, and ancient ruins Ur is at a point of no return.
+              Join us in deciding its fate.
             </p>
             {/* leads to login / register */}
-            <button className="night-button">Join us!</button>
+            <button className="night-button" onClick={handleRegister}>
+              Join us!
+            </button>
           </div>
           <div>
             <img
@@ -35,15 +52,15 @@ const Home = () => {
             alt="starline"
           />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Kagrea is a world developed with love by a team of passionate
+            writers and creators. Together, they have come together and forged a
+            community that bonds over telling stories together in a shared
+            universe. The fate of the world is entirely in the players hands and
+            there's only one way to find out what the end result will be.
           </p>
-          <button className="grapebutton">Learn the History</button>
+          <button className="grapebutton" onClick={handleArticleNav}>
+            Learn the History
+          </button>
         </div>
       </div>
     </div>
