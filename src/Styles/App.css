@@ -308,6 +308,49 @@ text-align: left;
 background-color: aqua;
  }
 
+ /* SIGN UP PAGE */
+
+ .signin{
+  width: 40vw;
+  height: 60vh;
+  color:white;
+  background-color: rgb(76, 49, 87);
+  border-radius: 25px;
+  margin: 20vh auto;
+  display: flex;
+  align-content: center;
+  padding: 3em;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .col> a{
+  text-decoration: none;
+  color:rgb(227, 189, 234)
+ }
+
+ .card-overlay{
+  display:flex;
+  flex-direction: column;
+
+  margin: auto;
+  width: 70%;
+ }
+
+ .input-wrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 20px auto;
+  row-gap: 10px;
+ }
+
+ .input-wrapper > input{
+  border-radius: 25px;
+  padding: 10px;
+ }
+
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
   .deityarticle-container{
