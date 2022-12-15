@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+import { useState } from 'react'
 import Nav from './Components/Nav'
 import Home from './Pages/Home'
 import Login from './Pages/Login'
@@ -12,6 +13,9 @@ import EditArticle from './Pages/Articles/EditArticle'
 import NewArticle from './Pages/Articles/NewArticle'
 
 function App() {
+  const [authenticated, toggleAuthenticated] = useState(false)
+  const [user, setUser] = useState(null)
+
   return (
     <div className="App">
       <Nav />
