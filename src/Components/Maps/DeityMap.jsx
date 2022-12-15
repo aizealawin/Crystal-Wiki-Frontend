@@ -50,27 +50,6 @@ const DeityMap = () => {
         })
       }
       </div>
-      <footer>
-        <div className="footer-container">
-          <div className="footer-part">
-            <img
-              className="icon-image"
-              src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png"
-            />
-            <p> Kagrea Discord</p>
-          </div>
-          <div className="footer-part">
-            <p> Designed By Kusal Tholka Mudalige</p>
-          </div>
-          <div className="footer-part">
-            <img
-              className="icon-image"
-              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-            />
-            <p> My LinkedIn</p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }

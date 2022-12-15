@@ -23,7 +23,7 @@ const Articles = () => {
   }, [])
 
   return (
-    <div>
+    <div className="ArticlePageAlpha">
       {lastDirectory === 'world' ? (
         <Link to={`/new/${(type = 2)}`}>
           <button>New Article</button>

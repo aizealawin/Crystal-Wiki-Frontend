@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Didact+Gothic&family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* HEADER */
@@ -156,7 +157,7 @@ footer{
   margin: auto;
 }
 
-.home, .ArticlePage {
+.home, .ArticlePageAlpha {
   height: 100vh;
 }
 
