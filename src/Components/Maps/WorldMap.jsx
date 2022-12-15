@@ -17,7 +17,7 @@ const WorldMap = () => {
   }, [])
 
   return (
-    <div>
+    <div className='world-container-parent'>
       <div className = "world-intro">
         <h2>World Information</h2>
         <h4> Current and Ongoing Lore</h4>

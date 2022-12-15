@@ -4,7 +4,7 @@ const WorldCard = ({title,image}) => {
   return (
     <div className='WorldDetails'>
       <p>{title}</p>
-      <img src={image} alt='broken pic'/>
+      <img className='lore-card' src={image} alt='broken pic'/>
     </div>
   )
 }
