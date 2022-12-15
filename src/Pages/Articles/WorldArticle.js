@@ -18,7 +18,7 @@ const WorldArticle = () => {
   }, [loreId])
 
   const handleDelete = async (id) => {
-    await Client.delete(`/articles/${deityId}`)
+    await Client.delete(`/articles/${loreId}`)
     navigate('/')
   }
 

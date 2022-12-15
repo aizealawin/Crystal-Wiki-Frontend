@@ -18,7 +18,7 @@ const MapArticle = () => {
   }, [mapId])
 
   const handleDelete = async (id) => {
-    await Client.delete(`/articles/${deityId}`)
+    await Client.delete(`/articles/${mapId}`)
     navigate('/')
   }
 
