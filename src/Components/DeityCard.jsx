@@ -3,7 +3,7 @@ import React from 'react'
 const DeityCard = ({title, image}) => {
   return (
     <div className='DeityDetails'>
-      <p>{title}</p>
+      {/* <p className='deityTitle'>{title}</p> */}
       <img src={image} alt='broken pic'/>
     </div>
   )
