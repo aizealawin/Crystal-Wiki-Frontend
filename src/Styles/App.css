@@ -201,6 +201,41 @@ footer{
   width: 100%;
 }
 
+
+/* WORLD ARTICLE PAGE */
+.world-intro{
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto 10px auto;
+  text-align: left;
+  
+}
+.world-intro > h4, .world-intro > h2{
+ color:black;
+ margin: 0;
+}
+/* WORLD CARD */
+
+.WorldCard > a{
+  text-decoration: none;
+  font-family: 'Gothic A1';
+  font-weight: 700;
+  color:black;
+}
+
+.WorldDetails > img{
+  height:300px;
+}
+
+.World-container{
+  width: 80vw;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+
 /* DEITY PAGE */
 
 .deity-intro{
@@ -215,6 +250,8 @@ footer{
  color:black;
  margin: 0;
 }
+
+
 
 /* DEITY CARD */
 
@@ -307,6 +344,7 @@ text-align: left;
  a.ArticlePageAlpha > button {
 background-color: aqua;
  }
+
 
  /* SIGN UP PAGE */
 
