@@ -22,11 +22,12 @@ const DeityMap = () => {
         articles.map((response) => {
           if (response.type === "god"){
           return (
-            <div key={response.id}>
+            <div className='plsWork' key={response.id}>
               <Link to={{
                 pathname:`/articles/deities/${response.id}`
               }}>
-                <DeityCard title={response.title} content={response.content} image={response.image}/>
+                <p className='deityTitle'>{response.title}</p>
+                <DeityCard content={response.content} image={response.image}/>
               </Link>
             </div> 
           )}
