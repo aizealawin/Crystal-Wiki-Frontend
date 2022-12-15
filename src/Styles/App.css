@@ -180,10 +180,9 @@ footer{
   width: 100%;
 }
 
-
-/* DEITY PAGE */
-
-/* DEITY CARD */
+.plsWork > a{
+  text-decoration: none;
+}
 
 .DeityDetails > img {
  height: 200px;
