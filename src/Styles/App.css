@@ -142,6 +142,10 @@ footer{
   margin: auto;
 }
 
+.home {
+  height: 100vh;
+}
+
 /* Homepage- About us */
 
 .about-us-container {
