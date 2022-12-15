@@ -30,20 +30,43 @@ const DeityArticle = () => {
       </Link>
       <button onClick={handleDelete}>Delete Article</button>
       <br />
-      <h2>{deity.title}</h2>
-      <div>
-        <img src={deity.image} alt="broken pic" />
-        <p>{deity.alignment}</p>
-        <p>{deity.category}</p>
-        <p>{deity.domains}</p>
-        <p>{deity.pantheon}</p>
-        <p>{deity.symbol}</p>
-        <img src={deity.symbolImage} alt="broken pic" />
+
+      <div className="deityarticle-container">
+        <div className="deity-words">
+          <h3>{deity.title}</h3>
+          <p>{deity.content}</p>
+          <h4>Depiction</h4>
+          <p>{deity.depiction}</p>
+          <h4>Enemies</h4>
+          <p>{deity.enemies}</p>
+          <h4>Commandments</h4>
+          <p>{deity.commandments}</p>
+        </div>
+        <div className="deity-longcard">
+          <img src={deity.image} alt="broken pic" />
+          <p>
+            <b>Alignment:</b> {deity.alignment}
+          </p>
+          <p>
+            <b>Category:</b>
+            {deity.category}
+          </p>
+          <p>
+            <b>Domains:</b>
+            {deity.domains}
+          </p>
+          <p>
+            <b>Pantheon:</b>
+            {deity.pantheon}
+          </p>
+          <p>
+            <b>Symbol:</b>
+            {deity.symbol}
+          </p>
+          <img src={deity.symbolImage} alt="broken pic" />
+        </div>
       </div>
-      <p>{deity.content}</p>
-      <p>{deity.depiction}</p>
-      <p>{deity.enemies}</p>
-      <p>{deity.commandments}</p>
+
       <CommentMap articleId={deityId} />
     </div>
   )
