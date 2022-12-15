@@ -43,13 +43,16 @@ nav {
 /* Main Components - consistent on all pages*/
 
 h2{
-  font-family: 'Cinzel'
+  font-family: 'Cinzel';
+  font-weight:700;
+  font-size: 40px;
 }
 
 h4{
   font-family: 'Gothic A1';
-  font-size: 22px;
+  font-size: 20px;
 }
+
 
 p{
   font-family:'Gothic A1';
@@ -79,6 +82,7 @@ button{
   color: white;
   margin: 10px 0 10px 0;
 }
+
 
 footer{
   background-color: rgba(22, 33, 62, 1);
@@ -152,7 +156,7 @@ footer{
   margin: auto;
 }
 
-.home {
+.home, .ArticlePage {
   height: 100vh;
 }
 
@@ -162,12 +166,12 @@ footer{
   max-width: 80vw;
   display: flex;
   flex-direction: column;
-  margin: 20px auto 20px auto;
+  margin: 100px auto 100px auto;
 
 }
 .about-us-container > h2 {
   font-family: 'Cinzel';
-  font-size: 48px;
+  font-size: 40px;
   text-align: left;
   margin: 5px 0 5px 0;
 }
@@ -180,15 +184,45 @@ footer{
   width: 100%;
 }
 
-.plsWork > a{
+/* DEITY PAGE */
+.deity-intro{
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto 10px auto;
+  text-align: left;
+  
+}
+.deity-intro > h4,h2{
+ color:black;
+ margin: 0;
+}
+
+/* DEITY CARD */
+
+
+.DeityCard> a{
   text-decoration: none;
+  font-family: 'Gothic A1';
+  font-weight: 700;
+  color:black;
+}
+
+.DeityCard{
+  width: 200px;
+  padding: 30px;
+  margin: 20px 0 20px 0;
 }
 
 .DeityDetails > img {
  height: 200px;
 }
 
-.DeityDetails > a {
- text-decoration: none;
+.Deity-container{
+  width: 80vw;
+  margin:auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
