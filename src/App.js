@@ -2,7 +2,6 @@ import { Route, Routes } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Nav from './Components/Nav'
 import Home from './Pages/Home'
-import Login from './Pages/Login'
 import Articles from './Pages/Articles'
 import DeityArticle from './Pages/Articles/DeityArticle'
 import './Styles/App.css'
@@ -47,8 +46,6 @@ function App() {
       />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
         <Route path="/articles/world" element={<Articles />} />
         <Route path="/articles/deities" element={<Articles />} />
         <Route path="/articles/deities/:deityId" element={<DeityArticle />} />
