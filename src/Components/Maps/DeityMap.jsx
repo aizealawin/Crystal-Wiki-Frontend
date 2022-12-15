@@ -17,6 +17,7 @@ const DeityMap = () => {
   }, [])
 
   return (
+    
     <div>
       {
         articles.map((response) => {
