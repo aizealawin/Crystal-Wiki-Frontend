@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Didact+Gothic&family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* HEADER */
 .header {
@@ -46,6 +46,7 @@ nav {
   font-family: 'Cinzel';
   color: white;
   font-size: 24px;
+  margin-bottom: -15px;
 }
 .kagrea-name{
   font-family: 'Cinzel';
@@ -54,16 +55,71 @@ nav {
 }
 
 .kagrea-crystal{
-  width: 30vh;
-  height: 30vh;
+  width: 40vh;
+  height: 40vh;
+  margin-top: 40px;
 }
 .intro-holder{
   display: flex;
   background-image: url(https://i.imgur.com/IAWwISV.jpg);
   background-size:cover ;
   height: 50vh;
+  padding-top: 20px;
+  padding-left: 40px;
+  text-align: left;
+  border: solid;
+  border-color: black;
 }
 
+
+
+.home-body > p, h4 {
+  color: white;
+  font-family: 'Didact Gothic';
+  text-align: left;
+}
+
+.container {
+  max-width: 80vw;
+  display: flex;
+  flex-wrap: row;
+  margin: auto;
+}
+
+.join-button{
+  border-radius: 20px;
+  border-style: none;
+  background-color: rgba(45, 32, 96, 1);
+  width: 10vw;
+  height: 4vh;
+  color: white;
+}
+
+.about-us-container {
+  max-width: 80vw;
+  margin: auto;
+}
+.about-us-container > h3 {
+  font-family: 'Cinzel';
+  font-size: 48px;
+  text-align: left;
+  margin-bottom: 0;
+}
+.about-us-container > p{
+  text-align: left;
+  font-family: 'Gothic A1';
+}
 .starline{
-  width: 100vw;
+  margin: auto;
+  width: 100%;
+}
+
+.history{
+  border-radius: 20px;
+  border-style: none;
+  background-color: rgba(45, 32, 96, 1);
+  width: 10vw;
+  height: 4vh;
+  color: white;
+  align-items: left;
 }
