@@ -16,7 +16,7 @@ const Home = () => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
             </p>
             {/* leads to login / register */}
-            <button className="join-button">Join us!</button>
+            <button className="night-button">Join us!</button>
           </div>
           <div>
             <img
@@ -39,9 +39,30 @@ const Home = () => {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <button className="history">Learn the History</button>
+          <button className="grapebutton">Learn the History</button>
         </div>
       </div>
+      <footer>
+        <div className="footer-container">
+          <div className="footer-part">
+            <img
+              className="icon-image"
+              src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png"
+            />
+            <p> Kagrea</p>
+          </div>
+          <div className="footer-part">
+            <p> Designed By Kusal Tholka Mudalige</p>
+          </div>
+          <div className="footer-part">
+            <img
+              className="icon-image"
+              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            />
+            <p> My LinkedIn</p>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
