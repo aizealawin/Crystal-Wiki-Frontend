@@ -18,11 +18,24 @@ const WorldMap = () => {
 
   return (
     <div>
+      <div className = "world-intro">
+        <h2>World Information</h2>
+        <h4> Current and Ongoing Lore</h4>
+        <p> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing 
+          elit, sed do eiusmod tempor incididunt ut labore et 
+          dolore magna aliqua. Egestas integer eget aliquet nibh. 
+          Dignissim enim sit amet venenatis urna cursus eget nunc 
+          scelerisque. In eu mi bibendum neque egestas congue. 
+          Scelerisque varius morbi enim nunc faucibus a.
+          </p>
+      </div>
+      <div className="World-container">
       {
         articles.map((response) => {
           if (response.type === "lore"){
           return (
-            <div key={response.id}>
+            <div className="WorldCard" key={response.id}>
               <Link to={{
                 pathname:`/articles/lore/${response.id}`
               }}>
@@ -32,6 +45,7 @@ const WorldMap = () => {
           )}
         })
       }
+      </div>
     </div>
   )
 }
