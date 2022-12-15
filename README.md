@@ -12,7 +12,7 @@
 
 [Backend Repo](https://github.com/aizealawin/Crystal-Wiki-Backend)
 
-[Deployed Site](tbd)
+[Deployed Site](https://crystal-wiki-frontend-production.up.railway.app/)
 
 ---
 
