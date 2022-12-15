@@ -66,9 +66,16 @@ p{
   font-family:'Gothic A1';
   font-size:16px;
 }
+
 button{
   font-family: 'Gothic A1';
   font-size: 20px;
+  width: 8em;
+  margin: 2em;
+  border-style: none;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: rgb(171, 140, 215);
 }
 
 .night-button{
@@ -78,6 +85,8 @@ button{
   width: 10vw;
   height: 4vh;
   color: white;
+  margin:0;
+  padding: 5px;
 }
 
 .grapebutton{
@@ -151,9 +160,9 @@ footer{
   border-color: black;
 }
 
-.home-body > p, h4 {
+.home-body > p, .home-body > h4 {
   color: white;
-  font-family: 'Didact Gothic';
+  font-family: 'Gothic A1';
   text-align: left;
 }
 
@@ -174,7 +183,7 @@ footer{
   max-width: 80vw;
   display: flex;
   flex-direction: column;
-  margin: 100px auto 100px auto;
+  margin: 100px auto;
 
 }
 .about-us-container > h2 {
@@ -202,7 +211,7 @@ footer{
   text-align: left;
   
 }
-.deity-intro > h4,h2{
+.deity-intro > h4, .deity-intro > h2{
  color:black;
  margin: 0;
 }
@@ -210,7 +219,7 @@ footer{
 /* DEITY CARD */
 
 
-.DeityCard> a{
+.DeityCard > a{
   text-decoration: none;
   font-family: 'Gothic A1';
   font-weight: 700;
@@ -241,7 +250,8 @@ footer{
   margin: 45px auto 80px auto;
   display:flex;
   flex-wrap: row;
-  justify-content: center;
+  justify-content: space-around;
+  align-content: flex-start;
 }
 
 .deity-words{
@@ -249,9 +259,11 @@ footer{
   width: 50vw;
 }
 
-.deity-words > p,h4{
-  color:black;
+.deity-words > p, .deity-words > h4{
+  color: black;
 }
+
+
 
 .deity-longcard{
   display:flex;
@@ -259,7 +271,7 @@ footer{
   margin:auto;
   background-color: rgba(45, 32, 96, 0.6);
   padding: 20px;
-  border-radius: 25px;;
+  border-radius: 25px;
 }
 
 .deity-longcard > p{
@@ -269,8 +281,32 @@ footer{
 
 .deity-longcard > img{
   height:325px;
+  width:auto;
   margin-bottom: 20px;;
 }
+
+.Comment-section{
+  width: 80vw;
+  margin: auto;
+  display:flex;
+  flex-direction: column;
+  
+}
+.Comment-section > h4{
+text-align: left;
+}
+
+.comment {
+  margin: 15px auto;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  text-align: left;
+}
+
+ a.ArticlePageAlpha > button {
+background-color: aqua;
+ }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
@@ -283,5 +319,11 @@ footer{
   .deity-words{
     width: 90%;
   }
+  .deity-longcard{
+    width:90%;
+  }
 
 }
+
+
+
