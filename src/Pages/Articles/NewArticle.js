@@ -14,7 +14,7 @@ const NewArticle = () => {
   } else if (articleType === '3') {
     type = 'map'
   }
-  console.log(type)
+
   const initialEditState = {
     type: type,
     alignment: '',
@@ -207,7 +207,7 @@ const NewArticle = () => {
         ></textarea>
       ) : null}
       <br />
-      <button onClick={handleSubmit}>Submit Edits</button>
+      <button onClick={handleSubmit}>Submit New</button>
       <br />
       <button onClick={() => navigate(-1)}>Go Back</button>
     </div>
