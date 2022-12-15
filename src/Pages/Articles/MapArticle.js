@@ -14,7 +14,7 @@ const MapArticle = () => {
       setMap(response.data)
     }
     getMap()
-  }, [])
+  }, [mapId])
   console.log(map)
   return (
     <div>
@@ -24,7 +24,7 @@ const MapArticle = () => {
       <br />
       <h2>{map.title}</h2>
       <div>
-        <img src={map.image} />
+        <img src={map.image} alt="map pic" />
         <p>{map.category}</p>
       </div>
       <p>{map.content}</p>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Nav from '../Components/Nav'
 
 const Home = () => {
   return (
@@ -22,6 +21,7 @@ const Home = () => {
             <img
               className="kagrea-crystal"
               src="https://i.imgur.com/r5dSDaO.png"
+              alt="kagrea crystal"
             />
           </div>
         </div>
@@ -29,7 +29,11 @@ const Home = () => {
       <div className="about-us">
         <div className="about-us-container">
           <h2>About us</h2>
-          <img className="starline" src="https://i.imgur.com/Ab5dZYz.png" />
+          <img
+            className="starline"
+            src="https://i.imgur.com/Ab5dZYz.png"
+            alt="starline"
+          />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -48,6 +52,7 @@ const Home = () => {
             <img
               className="icon-image"
               src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png"
+              alt="discord icon"
             />
             <p> Kagrea Discord</p>
           </div>
@@ -58,6 +63,7 @@ const Home = () => {
             <img
               className="icon-image"
               src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+              alt="linkedin icon"
             />
             <p> My LinkedIn</p>
           </div>

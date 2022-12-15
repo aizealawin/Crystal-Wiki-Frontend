@@ -14,7 +14,7 @@ const WorldArticle = () => {
       setLore(response.data)
     }
     getLore()
-  }, [])
+  }, [loreId])
 
   return (
     <div>
@@ -24,7 +24,7 @@ const WorldArticle = () => {
       <br />
       <h2>{lore.title}</h2>
       <div>
-        <img src={lore.image} />
+        <img src={lore.image} alt="world img" />
         <p>{lore.category}</p>
       </div>
       <p>{lore.content}</p>
