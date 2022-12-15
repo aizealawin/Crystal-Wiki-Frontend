@@ -18,6 +18,8 @@ console.log(comments)
 
   return (
     <div>
+      
+      <div className="comment">
       {
         comments.map((response) => {
           return(
@@ -29,6 +31,8 @@ console.log(comments)
           )
         })
       }
+      
+      </div>
     </div>
   )
 }

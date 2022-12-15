@@ -67,7 +67,10 @@ const DeityArticle = () => {
         </div>
       </div>
 
-      <CommentMap articleId={deityId} />
+      <div className="Comment-section">
+        <h4> Comments: </h4>
+        <CommentMap articleId={deityId} />
+      </div>
     </div>
   )
 }
