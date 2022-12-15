@@ -49,6 +49,13 @@ h2{
   font-size: 40px;
 }
 
+h3{
+  font-family: 'Cinzel';
+  font-weight: 500;
+  font-size: 30px;;
+  color:  rgba(45, 32, 96, 1)
+}
+
 h4{
   font-family: 'Gothic A1';
   font-size: 20px;
@@ -186,6 +193,7 @@ footer{
 }
 
 /* DEITY PAGE */
+
 .deity-intro{
   max-width: 80vw;
   display: flex;
@@ -226,4 +234,54 @@ footer{
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+ /* DEITY ARTICLE */
 
+.deityarticle-container{
+  width: 80vw;
+  margin: 45px auto 80px auto;
+  display:flex;
+  flex-wrap: row;
+  justify-content: center;
+}
+
+.deity-words{
+  text-align: left;
+  width: 50vw;
+}
+
+.deity-words > p,h4{
+  color:black;
+}
+
+.deity-longcard{
+  display:flex;
+  flex-direction:column;
+  margin:auto;
+  background-color: rgba(45, 32, 96, 0.6);
+  padding: 20px;
+  border-radius: 25px;;
+}
+
+.deity-longcard > p{
+  color:white;
+  margin: 5px auto 5px auto;
+}
+
+.deity-longcard > img{
+  height:325px;
+  margin-bottom: 20px;;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+  .deityarticle-container{
+    width: 90vw;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 910px) {
+  .deity-words{
+    width: 90%;
+  }
+
+}
