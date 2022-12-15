@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { RegisterUser } from '../services/Auth'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 const Register = () => {
   let navigate = useNavigate()
 
@@ -32,21 +32,21 @@ const Register = () => {
   }
 
   return (
-    <div className="signin col">
-      <div className="card-overlay centered">
-        <form className="col" onSubmit={handleSubmit}>
-          <div className="input-wrapper">
+    <div>
+      <div>
+        <form onSubmit={handleSubmit}>
+          <div>
             <label htmlFor="name">Name</label>
             <input
               onChange={handleChange}
               name="name"
               type="text"
-              placeholder="John Smith"
+              placeholder="Name"
               value={formValues.name}
               required
             />
           </div>
-          <div className="input-wrapper">
+          <div>
             <label htmlFor="email">Email</label>
             <input
               onChange={handleChange}
@@ -58,7 +58,7 @@ const Register = () => {
             />
           </div>
 
-          <div className="input-wrapper">
+          <div>
             <label htmlFor="password">Password</label>
             <input
               onChange={handleChange}
@@ -68,7 +68,7 @@ const Register = () => {
               required
             />
           </div>
-          <div className="input-wrapper">
+          <div>
             <label htmlFor="confirmPassword">Confirm Password</label>
             <input
               onChange={handleChange}
@@ -89,6 +89,7 @@ const Register = () => {
           </button>
         </form>
       </div>
+      <Link to="/signin">Have an account?</Link>
     </div>
   )
 }

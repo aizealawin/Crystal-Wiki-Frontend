@@ -1,6 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  const navigate = useNavigate()
+
+  const handleRegister = () => {
+    navigate('/register')
+  }
+
+  const handleArticleNav = () => {
+    navigate('/articles/world')
+  }
+
   return (
     <div className="home">
       <div className="intro-holder">
@@ -19,7 +30,9 @@ const Home = () => {
               Join us in deciding its fate.
             </p>
             {/* leads to login / register */}
-            <button className="night-button">Join us!</button>
+            <button className="night-button" onClick={handleRegister}>
+              Join us!
+            </button>
           </div>
           <div>
             <img
@@ -45,7 +58,9 @@ const Home = () => {
             universe. The fate of the world is entirely in the players hands and
             there's only one way to find out what the end result will be.
           </p>
-          <button className="grapebutton">Learn the History</button>
+          <button className="grapebutton" onClick={handleArticleNav}>
+            Learn the History
+          </button>
         </div>
       </div>
     </div>
