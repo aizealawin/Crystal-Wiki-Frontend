@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import Client from '../../Services/api'
+import RichTextEditor from 'react-rte'
 
 const EditArticle = () => {
   const { articleId } = useParams()
   const [article, setArticle] = useState([])
+  const [textEditor, setText] = useState([])
 
   const navigate = useNavigate()
 

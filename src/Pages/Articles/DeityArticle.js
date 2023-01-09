@@ -4,12 +4,10 @@ import { useEffect, useState } from 'react'
 import Client from '../../Services/api'
 import CommentMap from '../../Components/Maps/CommentMap'
 import { useNavigate } from 'react-router-dom'
-import RichTextEditor from 'react-rte'
 
 const DeityArticle = () => {
   const [deity, setDeity] = useState([])
   const navigate = useNavigate()
-  const [textEditor, setText] = useState([])
 
   const { deityId } = useParams()
   useEffect(() => {
