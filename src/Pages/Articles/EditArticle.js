@@ -57,9 +57,16 @@ const EditArticle = () => {
       throw error
     }
   }
+  const onChange = (value) => {
+    this.setText({ value })
+    if (this.onChange) {
+      this.onChange(value.toString('html'))
+    }
+  }
 
   return (
     <div>
+      <RichTextEditor value={this.value} onChange={this.onChange} />
       {article.type === 'god' ? (
         <input
           type="text"
