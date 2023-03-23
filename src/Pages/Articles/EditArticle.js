@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import Client from '../../Services/api'
+import ReactQuill from 'react-quill'
+import 'react-quill/dist/quill.snow.css'
 
 const EditArticle = () => {
   const { articleId } = useParams()
   const [article, setArticle] = useState([])
-
+  const [value, setValue] = useState('')
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -212,6 +214,10 @@ const EditArticle = () => {
       <button onClick={handleSubmit}>Submit Edits</button>
       <br />
       <button onClick={() => navigate(-1)}>Go Back</button>
+
+
+      <ReactQuill theme="snow" value={value} onChange={setValue} />
+
     </div>
   )
 }
