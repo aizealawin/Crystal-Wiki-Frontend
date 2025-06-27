@@ -10,9 +10,9 @@
 
 ### **_Resources_**
 
-[Backend Repo](https://github.com/aizealawin/Crystal-Wiki-Backend)
+[Backend Repo](https://github.com/aizealawin/Crystal-Wiki-Backend) (DEPRECATED)
 
-[Deployed Site](https://crystal-wiki-frontend-production.up.railway.app/)
+[Deployed Site](https://crystal-wiki-frontend-production.up.railway.app/) (DEPRECATED)
 
 ---
 
